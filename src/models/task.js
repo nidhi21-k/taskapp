@@ -48,18 +48,3 @@ const taskSchema = mongoose.Schema({
 const Task = mongoose.model('Task',taskSchema);   // define Task model from schema
 
 module.exports = Task;
-
-// const commentSchema = new Schema({
-//     content: { type: String, required: true },
-//     author : { type: Schema.Types.ObjectId, ref: 'User', required: true },
-//     comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
-//   }, { timestamps: true });
-
-// comments: [
-//     {
-//       id: Number,
-//       text: String,
-//       type: String,
-//       date: Date,
-//       replies: [{ id: Number, text: String, type: String, date: Date }],
-//     },
